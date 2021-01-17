@@ -1,0 +1,250 @@
+#include <iostream> /
+#include <windows.h>
+#include <iomanip>
+using namespace std;
+
+
+
+struct Sattellite
+{
+
+    string type;
+    int range;
+    int timings;
+    int frequency;
+    string orbit;
+    int distanceorbit;
+
+
+}p1[2],p2[2],p3[2],p4[2],p5[2],p6[2];
+int d1, d2, d3, d4, d5, d6;
+int october[6] = {d1,d2,d3,d4,d5,d6};
+
+void observingplanet1()
+{
+    int temp,max;
+    for (int i = 0; i < 2; i++)
+    {
+
+        cout << "Enter The Type Of Satellite" << endl;
+        cin >> p1[i].type;
+        cout << "\nEnter The Range Of Satellite" << endl;
+        cin >> p1[i].range;
+        cout << "\nEnter The Frequency Of Satellite" << endl;
+        cin >> p1[i].frequency;
+        cout << "\nEnter The Name  Of Planet Satellite Is Orbiting" << endl;
+        cin >> p1[i].orbit;
+        cout <<"\nEnter The Distance  Of Satellite From Planet" << endl;
+        cin >> p1[i].distanceorbit;
+
+    }
+    d1 = p1[0].distanceorbit;
+    for (int j = 0; j < 2; j++)
+    {
+        temp = p1[j].distanceorbit;
+        if (temp < d1)
+        {
+            d1 = temp;
+        }
+    }
+    for (int k = 0; k < 2; k++)
+    {
+        if (p1[k].distanceorbit == d1)
+        {
+            cout<< "NEAREST PLANET IS "<<p1[k].type<<endl;
+        }
+    }
+}
+void observingplanet2()
+{
+    int temp, max;
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\t\nEnter The Type Of Satellite" << endl;
+        cin >> p2[i].type;
+        cout << "\t\nEnter The Range Of Satellite" << endl;
+        cin >> p2[i].range;
+        cout << "\t\nEnter The Frequency Of Satellite" << endl;
+        cin >> p2[i].frequency;
+        cout << "\t\nEnter The Name  Of Planet Satellite Is Orbiting" << endl;
+        cin >> p2[i].orbit;
+        cout << "\t\nEnter The Distance  Of Satellite From Planet" << endl;
+        cin >> p2[i].distanceorbit;
+
+    }
+    d2 = p2[0].distanceorbit;
+    for (int j = 0; j < 2; j++)
+    {
+        temp = p2[j].distanceorbit;
+        if (temp < d2)
+        {
+            d2 = temp;
+        }
+    }
+    for (int k = 0; k < 2; k++)
+    {
+        if (p2[k].distanceorbit == d1)
+        {
+            cout<< "NEAREST PLANET IS "<<p1[k].type<<endl;
+        }
+    }
+}
+void observingplanet3()
+{
+    int temp, max;
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\t\nEnter The Type Of Satellite" << endl;
+        cin >> p3[i].type;
+        cout << "\t\nEnter The Range Of Satellite" << endl;
+        cin >> p3[i].range;
+        cout << "\t\nEnter The Frequency Of Satellite" << endl;
+        cin >> p3[i].frequency;
+        cout << "\t\nEnter The Name  Of Planet Satellite Is Orbiting" << endl;
+        cin >> p3[i].orbit;
+        cout << "\t\nEnter The Distance  Of Satellite From Planet" << endl;
+        cin >> p3[i].distanceorbit;
+
+    }
+    d3 = p3[0].distanceorbit;
+    for (int j = 0; j < 2; j++)
+    {
+        temp = p3[j].distanceorbit;
+        if (temp < d3)
+        {
+            d3 = temp;
+        }
+    }
+    for (int k = 0; k < 2; k++)
+    {
+        if (p3[k].distanceorbit == d1)
+        {
+            cout<< "NEAREST PLANET IS "<< p1[k].type<<endl;
+        }
+    }
+}
+void observingplanet4()
+{
+    int temp, max;
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\t\nEnter The Type Of Satellite" << endl;
+        cin >> p4[i].type;
+        cout << "\t\nEnter The Range Of Satellite" << endl;
+        cin >> p4[i].range;
+        cout << "\t\nEnter The Frequency Of Satellite" << endl;
+        cin >> p4[i].frequency;
+        cout << "\t\nEnter The Name  Of Planet Satellite Is Orbiting" << endl;
+        cin >> p4[i].orbit;
+        cout << "\t\nEnter The Distance  Of Satellite From Planet" << endl;
+        cin >> p4[i].distanceorbit;
+
+    }
+    d4 = p4[0].distanceorbit;
+    for (int j = 0; j < 2; j++)
+    {
+        temp = p4[j].distanceorbit;
+        if (temp < d4)
+        {
+            d4 = temp;
+        }
+    }
+    for (int k = 0; k < 2; k++)
+    {
+        if (p4[k].distanceorbit == d1)
+        {
+            cout<< "NEAREST PLANET IS "<< p1[k].type<<endl;
+        }
+    }
+}
+void observingplanet5()
+{
+    int temp, max;
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\t\nEnter The Type Of Satellite" << endl;
+        cin >> p5[i].type;
+        cout << "\t\nEnter The Range Of Satellite" << endl;
+        cin >> p5[i].range;
+        cout << "\t\nEnter The Frequency Of Satellite" << endl;
+        cin >> p5[i].frequency;
+        cout << "\t\nEnter The Name  Of Planet Satellite Is Orbiting" << endl;
+        cin >> p5[i].orbit;
+        cout << "\t\nEnter The Distance  Of Satellite From Planet" << endl;
+        cin >> p5[i].distanceorbit;
+
+    }
+    d5 = p5[0].distanceorbit;
+    for (int j = 0; j < 2; j++)
+    {
+        temp = p5[j].distanceorbit;
+        if (temp < d5)
+        {
+            d5 = temp;
+        }
+    }
+    for (int k = 0; k < 2; k++)
+    {
+        if (p5[k].distanceorbit == d1)
+        {
+            cout<< "NEAREST PLANET IS "<< p1[k].type<<endl;
+        }
+    }
+}
+void observingplanet6()
+{
+    int temp, max;
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\t\nEnter The Type Of Satellite" << endl;
+        cin >> p6[i].type;
+        cout << "\t\nEnter The Range Of Satellite" << endl;
+        cin >> p6[i].range;
+        cout << "\t\nEnter The Frequency Of Satellite" << endl;
+        cin >> p6[i].frequency;
+        cout << "\t\nEnter The Name  Of Planet Satellite Is Orbiting" << endl;
+        cin >> p6[i].orbit;
+        cout << "\t\nEnter The Distance  Of Satellite From Planet" << endl;
+        cin >> p6[i].distanceorbit;
+
+    }
+    d6 = p6[0].distanceorbit;
+    for (int j = 0; j < 2; j++)
+    {
+        temp = p6[j].distanceorbit;
+        if (temp < d6)
+        {
+            d6 = temp;
+        }
+    }
+    for (int k = 0; k < 2; k++)
+    {
+        if (p6[k].distanceorbit == d1)
+        {
+            cout<< "NEAREST PLANET IS "<< p1[k].type<<endl;
+        }
+    }
+}
+int main()
+{
+    observingplanet1();
+    system("PAUSE");
+    system("CLS");
+    for (int i = 0; i < 2; i++)
+    {
+        cout << "\t\nThe Type Of Satellite: " << endl;
+        cout << p1[i].type;
+        cout <<"planet two";
+        cout << p2[i].type;
+        cout << "\t\nThe Range Of Satellite: " << endl;
+        cout << p1[i].range;
+        cout << "\t\nThe Frequency Of Satellite: " << endl;
+        cout << p1[i].frequency;
+        cout << "\t\nThe Name  Of Planet Satellite Is Orbiting: " << endl;
+        cout << p1[i].orbit;
+        cout << "\t\nThe Distance  Of Satellite From Planet: " << endl;
+        cout << p1[i].distanceorbit;
+
+    }
+
+}
