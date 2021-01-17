@@ -1,0 +1,314 @@
+FOR PAKWHEELS
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+struct  pakwheels
+{
+   string color;
+   int model;
+   string brand;
+   string transmission;
+};
+int cont;
+int main()
+{
+    int n;
+    pakwheels add[5];
+    for(int i=0; i<3; i++)
+    {
+    cout << "Add the color of the car: ";
+    cin>> add[cont].color;
+    cout << "Add the model of a car: ";
+    cin>> add[cont].model;
+    cout << "Add the brand of the car: ";
+    cin>> add[cont].brand;
+    cout <<"is it MANUAL or AUTOMATIC?: ";
+    cin>> add[cont].transmission;
+     cin.ignore();
+     cout << "Enter the data again of another car: "<<endl;
+     cout<< endl;
+ cont++;
+    }
+     cout << setw(15) << "CAR INFORMATION CENTRE"<< endl;
+    cout << "Company name" << setw(15)<< "Color" << setw(15)<< "model"<<setw(15) <<"Brand"<<setw(15)<<"Transmission"<<endl;
+    cout<< endl;
+    for(int i=0; i<=cont; i++)
+    {
+        cout << "Toyota" << setw(20)<< add[i].color << setw(15)<< add[i].model<<setw(15) <<add[i].brand<<setw(15)<<add[i].transmission<<endl;
+    }
+
+    cout << "Record of second car: "<<endl;
+    cout << "the color of the car: ";
+    cout << add[1].color<<endl;
+    cout << "the model of a car: ";
+    cout << add[1].model<<endl;
+    cout << "the brand of the car: ";
+    cout << add[1].brand<<endl;
+    cout <<"is it MANUAL or AUTOMATIC?: ";
+    cout << add[1].transmission<<endl;
+    cout <<"Enter second car information again: "<<endl;
+    cout<< endl;
+    cout << "Add the color of the car: ";
+    cin>> add[1].color;
+    cout << "Add the model of a car: ";
+    cin>> add[1].model;
+    cout << "Add the brand of the car: ";
+    cin>> add[1].brand;
+    cout <<"is it MANUAL or AUTOMATIC?: ";
+    cin>> add[1].transmission;
+    cin.ignore();
+    cout <<"Second car information after manipulation"<< endl;
+    cout << "Record of second car: "<<endl;
+    cout << "the color of the car: ";
+    cout << add[1].color<<endl;
+    cout << "the model of a car: ";
+    cout << add[1].model<<endl;
+    cout << "the brand of the car: ";
+    cout << add[1].brand<<endl;
+    cout <<"is it MANUAL or AUTOMATIC?: ";
+    cout << add[1].transmission<<endl;
+    cout<<"Enter new car information"<<endl;
+    cout<< endl;
+    cout << "Add the color of the car: ";
+    cin>> add[cont].color;
+    cout << "Add the model of a car: ";
+    cin>> add[cont].model;
+    cout << "Add the brand of the car: ";
+    cin>> add[cont].brand;
+    cout <<"is it MANUAL or AUTOMATIC?: ";
+    cin>> add[cont].transmission;
+    cin.ignore();
+    cout << setw(15) << "CAR INFORMATION CENTRE"<< endl;
+    cout<< endl;
+    cout << "Company name" << setw(15)<< "Color" << setw(15)<< "model"<<setw(15) <<"Brand"<<setw(15)<<"Transmission"<<endl;
+    cout << "Toyota" << setw(20)<< add[0].color << setw(15)<< add[0].model<<setw(15) <<add[0].brand<<setw(15)<<add[0].transmission<<endl;
+    cout << "Toyota" << setw(20)<< add[1].color << setw(15)<< add[1].model<<setw(15) <<add[1].brand<<setw(15)<<add[1].transmission<<endl;
+    cout << "Toyota" << setw(20)<< add[3].color << setw(15)<< add[3].model<<setw(15) <<add[3].brand<<setw(15)<<add[3].transmission<<endl;
+   
+
+
+
+
+    return 0;
+}
+FOR MOBILE:
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+struct  pakwheels
+{
+   string mobile;
+   int price;
+   string  storage;
+   int sizes;
+};
+int cont;
+int main()
+{
+
+    pakwheels add[5];
+    for(int i=0; i<3; i++)
+    {
+    cout << "Add the mobile name: ";
+    cin>> add[cont].mobile;
+    cout << "Add the price: ";
+    cin>> add[cont].price;
+    cout << "whats the storage: ";
+    cin>> add[cont].storage;
+    cout <<"TOTAL SIZE: ";
+    cin>> add[cont].sizes;
+     cin.ignore();
+     cout << "Enter the data again of another mobile: "<<endl;
+     cout<< endl;
+ cont++;
+    }
+        cout << setw(15) << "MOBILE DATA INFORMATION CENTRE"<< endl;
+        cout << "Company name" << setw(15)<< "MOBILE" << setw(15)<< "PRICE"<<setw(15) <<"STORAGE"<<setw(15)<<"SIZES"<<endl;
+        cout<< endl;
+        cout << "Samsung" << setw(20)<<  add[1].mobile << setw(15)<< add[1].price<<setw(15) <<add[1].storage<<setw(15)<<add[1].sizes<<endl;
+        cout << "Infinix" << setw(20)<<  add[2].mobile << setw(15)<< add[2].price<<setw(15) <<add[2].storage<<setw(15)<<add[2].sizes<<endl;
+        cout << "MoTorolla" << setw(20)<<  add[3].mobile << setw(15)<< add[3].price<<setw(15) <<add[3].storage<<setw(15)<<add[3].sizes<<endl;
+        cout << "highest_price"<<endl;
+         int highest_price;
+            cout<< endl;
+         cout <<"HIGHEST PRICE OF THE MOBILE FROM THIS LIST IS"<<endl;
+            cout<< endl;
+    if(add[1].price > add[2].price)
+    {
+      cout << "Samsung" << setw(20)<<  add[1].mobile << setw(15)<< add[1].price<<setw(15) <<add[1].storage<<setw(15)<<add[1].sizes<<endl;
+    }
+    else
+        if(add[2].price > add[3].price)
+        cout << "Infinix" << setw(20)<<  add[2].mobile << setw(15)<< add[2].price<<setw(15) <<add[2].storage<<setw(15)<<add[2].sizes<<endl;
+        else
+        cout << "MoTorolla" << setw(20)<<  add[3].mobile << setw(15)<< add[3].price<<setw(15) <<add[3].storage<<setw(15)<<add[3].sizes<<endl;
+        //after removing 3rd item from samsung
+           cout<< endl;
+        cout << "Company name" << setw(15)<< "MOBILE" << setw(15)<< "PRICE"<<setw(15)<<"SIZES"<<endl;
+        cout<< endl;
+        cout << "Samsung" << setw(20)<<  add[1].mobile << setw(15)<< add[1].price<<setw(15)<<add[1].sizes<<endl;
+
+
+
+
+
+    return 0;
+}
+
+FOR MEDICINE:
+#include <iostream>
+#include <string>
+#include <iomanip>
+using namespace std;
+struct  pakwheels
+{
+   string phrname;
+   string medname;
+   int mg;
+   int dosage;
+
+};
+int cont;
+int main()
+{
+    int n;
+    pakwheels mascon[5],centrum[5],belle[5],gnc[5];
+    for(int i=0; i<3; i++)
+    {
+    cout << "Add the pharma company  name: ";
+    cin>> mascon[cont].phrname;
+    cout << "Add the medicine name: ";
+    cin>> mascon[cont].medname;
+    cout << "strength(e.g. msg)?: ";
+    cin>> mascon[cont].mg;
+    cout <<"dosage?: ";
+    cin>> mascon[cont].dosage;
+    cin.ignore();
+     cout << "Enter the data again of another MEDICINES: "<<endl;
+     cout<< endl;
+    cont++;
+    }
+    for(int i=0; i<3; i++)
+    {
+    cout << "Add the pharma company  name: ";
+    cin>> centrum[cont].phrname;
+    cout << "Add the medicine name: ";
+    cin>> centrum[cont].medname;
+    cout << "strength(e.g. msg)?: ";
+    cin>> centrum[cont].mg;
+    cout <<"dosage?: ";
+    cin>> centrum[cont].dosage;
+    cin.ignore();
+     cout << "Enter the data again of another MEDICINES: "<<endl;
+     cout<< endl;
+    cont++;
+    }
+    for(int i=0; i<3; i++)
+    {
+    cout << "Add the pharma company  name: ";
+    cin>> belle[cont].phrname;
+    cout << "Add the medicine name: ";
+    cin>> belle[cont].medname;
+    cout << "strength(e.g. msg)?: ";
+    cin>> belle[cont].mg;
+    cout <<"dosage?: ";
+    cin>> belle[cont].dosage;
+    cin.ignore();
+     cout << "Enter the data again of another MEDICINES: "<<endl;
+     cout<< endl;
+    cont++;
+    }
+    for(int i=0; i<3; i++)
+    {
+    cout<<"item present in mascon"<<endl;
+    cout<< "Pharma Company Name" <<endl;
+    cout <<  mascon[i].phrname ;
+    cout<< "Medicine Name" <<endl;
+    cout <<  mascon[i].medname ;
+    cout<< "strength(e.g. msg)?: " <<endl;
+    cout <<  mascon[i].mg <<".mg";
+    cout<<"dosage?:" <<endl;
+    cout <<  mascon[i].dosage ;
+    }
+
+    for(int i=0; i<3; i++)
+    {
+    cout <<"Enter GNC name company items"<<endl;
+
+    cout << "Add the pharma company  name: ";
+    cin>> gnc[cont].phrname;
+    cout << "Add the medicine name: ";
+    cin>> gnc[cont].medname;
+    cout << "strength(e.g. mg)?: ";
+    cin>> gnc[cont].mg;
+    cout <<"dosage?: ";
+    cin>> gnc[cont].dosage;
+    cin.ignore();
+     cout << "Enter the data again of another MEDICINES: "<<endl;
+     cout<< endl;
+    cont++;
+    }
+     int strength=1,strength1=0,count1,count2,count3,count4,con1,con2,con3,con4;
+   for(int i=0; i<3; i++)
+   {
+      if(centrum[i].mg==strength)
+    {
+        count1++;
+    }
+     if(mascon[i].mg==strength)
+    {
+        count2++;
+    }
+     if(belle[i].mg==strength)
+    {
+        count3++;
+    }
+     if(gnc[i].mg==strength)
+     {
+         count4;
+     }
+      if(centrum[i].mg==strength1)
+    {
+        con1++;
+    }
+     if(mascon[i].mg==strength1)
+    {
+        con2++;
+    }
+     if(belle[i].mg==strength1)
+    {
+        con3++;
+    }
+     if(gnc[i].mg==strength1)
+     {
+         con4;
+     }
+   }
+    cout<<setw(15)<<"Name"<<setw(25)<<"filled with 1mg"<<"empty"<<endl;
+    cout<<setw(15)<<centrum[cont].phrname<<setw(25)<<count1<<con1<<endl;
+    cout<<setw(15)<<mascon[cont].phrname<<setw(25)<<count2<<con2<<endl;
+    cout<<setw(15)<<belle[cont].phrname<<setw(25)<<count3<<con3<<endl;
+    cout<<setw(15)<<gnc[cont].phrname<<setw(25)<<count4<<con4<<endl;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    return 0;
+}
+
+
+
+
+
